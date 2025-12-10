@@ -115,14 +115,29 @@ body{
   .site-title{font-size:1.2rem}
   .main-nav a{font-size:0.9rem}
 }
-.hero-img {
-  width: 100%;
-  height: 250px;      /* adjust to your taste */
-  object-fit: cover;  /* crops the image cleanly */
-  object-position: center; /* center the important part */
-  border-radius: 8px;
-  display: block;
+/* make sure it wins — put at the end of styles.css */
+.lead-article {
+  max-width: 980px;      /* width of the card area */
+  margin: 0 auto;
+  padding: 24px;
+  overflow: hidden;      /* hides anything that overflows the card */
+  box-sizing: border-box;
+  background: #f7fbff;   /* optional: keeps your card visible */
+  border-radius: 6px;
 }
+
+/* hero image behaves like a banner and will be cropped cleanly */
+.lead-article .hero-img,
+.lead-article img.hero-img {
+  display: block !important;
+  width: 100% !important;
+  height: 260px !important;       /* adjust height to taste */
+  object-fit: cover !important;
+  object-position: center center !important; /* change to left/right/top */
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
 
 
 .top-gallery {
