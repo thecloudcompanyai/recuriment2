@@ -1,0 +1,13 @@
+{
+  "name": "bharat-times",
+  "version": "1.0.0",
+  "description": "A simple HTML/CSS news magazine",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Static site - no server needed'",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": ["news", "magazine", "html", "css"],
+  "author": "",
+  "license": "MIT"
+}
