@@ -115,3 +115,31 @@ body{
   .site-title{font-size:1.2rem}
   .main-nav a{font-size:0.9rem}
 }
+.hero-img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.top-gallery {
+  margin: 40px 0;
+}
+
+.top-gallery .gallery-row {
+  display: flex;
+  gap: 15px;
+}
+
+.top-gallery img {
+  width: 33%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  height: 160px;
+  object-fit: cover;
+}
