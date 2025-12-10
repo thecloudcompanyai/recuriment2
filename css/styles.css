@@ -1,0 +1,117 @@
+/* Simple, student-friendly CSS for Bharat Times */
+/* Keep it basic: colors, spacing, readable layout */
+
+:root{
+  --brand: #2b5f9e; /* simple blue */
+  --muted: #666;
+  --bg: #ffffff;
+  --card: #f6f9ff;
+  --maxw: 900px;
+  --container-padding: 16px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color:#222;
+  background:var(--bg);
+  line-height:1.4;
+}
+
+/* Container to center content */
+.container{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:var(--container-padding);
+}
+
+/* Header */
+.site-header{
+  background:var(--brand);
+  color: #fff;
+}
+.header-inner{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:8px;
+  padding-top:12px;
+  padding-bottom:12px;
+}
+.site-title{
+  margin:0;
+  font-size:1.6rem;
+  letter-spacing:0.5px;
+}
+.tagline{
+  margin:0;
+  font-size:0.9rem;
+  opacity:0.9;
+}
+
+/* Simple nav */
+.main-nav{
+  margin-top:8px;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.main-nav a{
+  color:#fff;
+  text-decoration:none;
+  padding:6px 8px;
+  border-radius:4px;
+  background:transparent;
+  font-weight:600;
+  font-size:0.95rem;
+}
+.main-nav a.active{
+  background:rgba(255,255,255,0.12);
+}
+
+/* Main content styles */
+.lead-article{
+  margin-top:18px;
+  padding:14px;
+  background:var(--card);
+  border-radius:6px;
+}
+.lead-article h2{margin-top:0}
+
+.columns{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:14px;
+  margin-top:16px;
+}
+.card{
+  background:#fff;
+  border:1px solid #e6eefc;
+  padding:12px;
+  border-radius:6px;
+}
+.card h3{margin:0 0 6px 0}
+.meta{color:var(--muted); font-size:0.9rem; margin:4px 0 8px 0;}
+
+/* Posts on section pages */
+.post{padding:12px 0; border-bottom:1px dashed #eee}
+.post:last-child{border-bottom:none}
+
+/* Footer */
+.site-footer{
+  margin-top:24px;
+  border-top:1px solid #eee;
+  padding:12px 0;
+  text-align:center;
+  color:var(--muted);
+  font-size:0.9rem;
+}
+
+/* Responsive small tweaks */
+@media (max-width:480px){
+  .header-inner{align-items:flex-start}
+  .site-title{font-size:1.2rem}
+  .main-nav a{font-size:0.9rem}
+}
